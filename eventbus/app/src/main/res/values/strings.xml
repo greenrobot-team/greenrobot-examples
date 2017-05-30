@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EventBus Example</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_post_sticky">Post sticky SampleEvent and finish</string>
+    <string name="action_post">Post SampleEvent</string>
+    <string name="action_launch_activity">Launch activity</string>
+</resources>

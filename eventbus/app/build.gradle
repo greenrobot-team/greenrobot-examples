@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    defaultConfig {
+        applicationId "com.example.eventbus"
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+        versionCode versions.code
+        versionName versions.name
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ eventBusIndex : 'com.example.eventbus.MyEventBusIndex' ]
+            }
+        }
+    }
+}
+
+dependencies {
+    compile project(path: ':eventlibrary')
+    compile "com.android.support:appcompat-v7:${versions.supportLibrary}"
+
+    compile "org.greenrobot:eventbus:${versions.eventbus}"
+    annotationProcessor "org.greenrobot:eventbus-annotation-processor:${versions.eventbusProcessor}"
+}
