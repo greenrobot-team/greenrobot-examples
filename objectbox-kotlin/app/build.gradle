@@ -21,5 +21,5 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
 
     compile 'io.objectbox:objectbox-android:0.9.13-SNAPSHOT'
-    kapt 'io.objectbox:objectbox-processor:0.9.12-SNAPSHOT'
+    kapt 'io.objectbox:objectbox-processor:0.9.13-SNAPSHOT'
 }
