@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
         noteDao.update(note);
 
         Note noteLoaded = noteDao.load(note.getId());
+
+        // load the example inserted on creating the database
+        Note noteExample = noteDao.load(1L);
     }
 
     private void insertAndUpdateToMany() {
