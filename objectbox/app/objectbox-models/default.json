@@ -10,7 +10,7 @@
       "properties": [
         {
           "id": "1:866408978121637418",
-          "name": "_id"
+          "name": "id"
         },
         {
           "id": "2:8783657992357377769",
@@ -21,10 +21,45 @@
           "name": "customTypes"
         }
       ]
+    },
+    {
+      "id": "2:9067771494627366460",
+      "lastPropertyId": "2:4283571411423334785",
+      "name": "Customer",
+      "properties": [
+        {
+          "id": "1:3955949447619076491",
+          "name": "id"
+        },
+        {
+          "id": "2:4283571411423334785",
+          "name": "name"
+        }
+      ]
+    },
+    {
+      "id": "3:8550476887954101434",
+      "lastPropertyId": "3:8551887731604898105",
+      "name": "Order",
+      "properties": [
+        {
+          "id": "1:5402801645111232310",
+          "name": "id"
+        },
+        {
+          "id": "2:3912803202362627603",
+          "name": "orderText"
+        },
+        {
+          "id": "3:8551887731604898105",
+          "indexId": "1:2982044785157808182",
+          "name": "customerId"
+        }
+      ]
     }
   ],
-  "lastEntityId": "1:4601780316589643834",
-  "lastIndexId": "0:0",
+  "lastEntityId": "3:8550476887954101434",
+  "lastIndexId": "1:2982044785157808182",
   "lastSequenceId": "0:0",
   "modelVersion": 2,
   "retiredEntityUids": [],
