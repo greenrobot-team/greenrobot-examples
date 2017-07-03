@@ -41,10 +41,9 @@ public class MainActivity extends AppCompatActivity {
         author.setUserId("author1");
         authorDao.insertOrReplace(author);
 
-        List<Author> results = authorDao.queryBuilder()
+        Author authorLoaded = authorDao.queryBuilder()
                 .where(AuthorDao.Properties.UserId.eq("author1"))
-                .list();
-        Author authorLoaded = results.get(0);
+                .unique();
     }
 
     private void insertAndLoadNote() {
