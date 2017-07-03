@@ -20,6 +20,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
 
-    compile 'io.objectbox:objectbox-android:0.9.13-SNAPSHOT'
-    kapt 'io.objectbox:objectbox-processor:0.9.13-SNAPSHOT'
+    compile 'io.objectbox:objectbox-android:0.9.13-RC'
+    kapt 'io.objectbox:objectbox-processor:0.9.13-RC'
 }
