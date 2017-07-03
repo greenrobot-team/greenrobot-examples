@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void insertAndLoadNote() {
         NoteDao noteDao = ExampleApp.getDaoSession(this).getNoteDao();
+        noteDao.deleteAll();
 
         Note note = new Note();
         note.setText("some text");
@@ -67,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
     private void insertAndUpdateToMany() {
         CustomerDao customerDao = ExampleApp.getDaoSession(this).getCustomerDao();
         OrderDao orderDao = ExampleApp.getDaoSession(this).getOrderDao();
+        customerDao.deleteAll();
+        orderDao.deleteAll();
 
         Customer customer = new Customer();
         customerDao.insert(customer);
