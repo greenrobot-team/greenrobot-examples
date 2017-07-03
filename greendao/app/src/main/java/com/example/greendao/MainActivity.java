@@ -2,6 +2,7 @@ package com.example.greendao;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.format.DateUtils;
 
 import com.example.greendao.model.Author;
 import com.example.greendao.model.AuthorDao;
@@ -62,6 +63,15 @@ public class MainActivity extends AppCompatActivity {
 
         // load the example inserted on creating the database
         Note noteExample = noteDao.load(1L);
+
+        // query by creation date
+        long currentTime = System.currentTimeMillis();
+        Date aDayAgo = new Date(currentTime - DateUtils.DAY_IN_MILLIS);
+        Date inADay = new Date(currentTime + DateUtils.DAY_IN_MILLIS);
+        List<Note> results = noteDao.queryBuilder()
+                .where(NoteDao.Properties.Date.gt(aDayAgo), NoteDao.Properties.Date.lt(inADay))
+                .build()
+                .list();
     }
 
     private void insertAndUpdateToMany() {
