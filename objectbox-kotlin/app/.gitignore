@@ -1,0 +1,4 @@
+/build
+
+# ObjectBox model file backup
+/objectbox-models/default.json.bak
