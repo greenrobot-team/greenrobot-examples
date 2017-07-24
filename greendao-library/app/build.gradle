@@ -14,5 +14,6 @@ android {
 }
 
 dependencies {
+    compile project(':entity-library')
     compile 'com.android.support:appcompat-v7:25.3.1'
 }
