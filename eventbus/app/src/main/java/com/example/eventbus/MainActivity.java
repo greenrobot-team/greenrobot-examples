@@ -12,6 +12,7 @@ import com.example.eventbus.library.BlankBaseLibraryFragment;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         EventBus.getDefault().unregister(this);
     }
 
-    @Subscribe(sticky = true)
+    @Subscribe(sticky = true, threadMode = ThreadMode.MAIN_ORDERED)
     public void handleEvent(BlankBaseLibraryFragment.SampleEvent event) {
         String className = this.getClass().getSimpleName();
         String message = "#handleEvent: called for " + event.getClass().getSimpleName();
