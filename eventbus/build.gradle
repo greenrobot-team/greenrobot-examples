@@ -7,7 +7,7 @@ buildscript {
 
             'minSdk': 15,
             'compileSdk': 26,
-            'targetSdk': 25,
+            'targetSdk': 26,
             'buildTools': '26.0.2',
 
             'supportLibrary': '25.3.1',
