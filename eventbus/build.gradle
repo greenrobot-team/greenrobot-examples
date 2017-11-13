@@ -10,7 +10,7 @@ buildscript {
             'targetSdk': 26,
             'buildTools': '26.0.2',
 
-            'supportLibrary': '25.3.1',
+            'supportLibrary': '27.0.1',
 
             'code': 1,
             'name': '1.0'
