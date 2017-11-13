@@ -23,6 +23,7 @@ dependencies {
     compile project(path: ':eventlibrary')
     compile "com.android.support:appcompat-v7:${versions.supportLibrary}"
 
+    compile "android.arch.lifecycle:runtime:1.0.3"
     compile "org.greenrobot:eventbus:${versions.eventbus}"
     annotationProcessor "org.greenrobot:eventbus-annotation-processor:${versions.eventbusProcessor}"
 }
