@@ -3,7 +3,7 @@
 buildscript {
     ext.versions = [
             'eventbus': '3.1.1',
-            'eventbusProcessor': '3.1.0',
+            'eventbusProcessor': '3.1.1-SNAPSHOT',
 
             'minSdk': 15,
             'compileSdk': 26,
@@ -32,6 +32,7 @@ allprojects {
     repositories {
         jcenter()
         google()
+        mavenLocal()
     }
 }
 
