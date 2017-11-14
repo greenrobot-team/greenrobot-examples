@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             ft.commit();
         }
 
-        EventBus.getDefault().observe(this);
+        EventBus.getDefault().observeStartStop(this);
     }
 
     @Subscribe(sticky = true, threadMode = ThreadMode.MAIN_ORDERED)
