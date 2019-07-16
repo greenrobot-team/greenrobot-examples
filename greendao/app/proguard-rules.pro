@@ -31,7 +31,7 @@
 -keepclassmembers class * extends org.greenrobot.greendao.AbstractDao {
 public static java.lang.String TABLENAME;
 }
--keep class **$Properties
+-keep class **$Properties {*;}
 
 # If you do not use SQLCipher:
 -dontwarn net.sqlcipher.database.**
