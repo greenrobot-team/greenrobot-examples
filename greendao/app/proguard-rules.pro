@@ -23,3 +23,17 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Just added this so we (greenrobot.org) can check the final class files for errors.
+-dontobfuscate
+
+### http://greenrobot.org/greendao/documentation/technical-faq/
+-keepclassmembers class * extends org.greenrobot.greendao.AbstractDao {
+public static java.lang.String TABLENAME;
+}
+-keep class **$Properties
+
+# If you do not use SQLCipher:
+-dontwarn net.sqlcipher.database.**
+# If you do not use RxJava:
+-dontwarn rx.**
