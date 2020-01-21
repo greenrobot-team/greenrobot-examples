@@ -6,10 +6,10 @@ buildscript {
             'eventbusProcessor': '3.1.1',
 
             'minSdk': 15,
-            'compileSdk': 26,
-            'targetSdk': 26,
+            'compileSdk': 28,
+            'targetSdk': 28,
 
-            'supportLibrary': '27.1.1',
+            'supportLibrary': '28.0.0',
 
             'code': 1,
             'name': '1.0'
