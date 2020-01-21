@@ -20,7 +20,7 @@ android {
 
 dependencies {
     implementation project(path: ':eventlibrary')
-    implementation "com.android.support:appcompat-v7:${versions.supportLibrary}"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
 
     implementation "org.greenrobot:eventbus:${versions.eventbus}"
     annotationProcessor "org.greenrobot:eventbus-annotation-processor:${versions.eventbusProcessor}"

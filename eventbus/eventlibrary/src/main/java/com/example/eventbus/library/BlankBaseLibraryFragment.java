@@ -1,10 +1,11 @@
 package com.example.eventbus.library;
 
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.widget.Toast;
 
 import org.greenrobot.eventbus.EventBus;
+
+import androidx.fragment.app.Fragment;
 
 public abstract class BlankBaseLibraryFragment extends Fragment {
 
