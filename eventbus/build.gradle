@@ -2,8 +2,8 @@
 
 buildscript {
     ext.versions = [
-            'eventbus': '3.1.1',
-            'eventbusProcessor': '3.1.1',
+            'eventbus': '3.2.0',
+            'eventbusProcessor': '3.2.0',
 
             'minSdk': 15,
             'compileSdk': 28,
