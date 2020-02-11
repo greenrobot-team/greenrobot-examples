@@ -1,7 +1,6 @@
 package com.example.greendao;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.text.format.DateUtils;
 
 import com.example.greendao.model.Author;
@@ -15,6 +14,8 @@ import com.example.greendao.model.OrderDao;
 
 import java.util.Date;
 import java.util.List;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
